@@ -1,0 +1,10 @@
+<Alloy>
+	<!-- Our main view code goes here -->
+	<!-- We created a TableView and associate it with the cars model in our models folder. -->
+	<Collection src="cars"/>
+	<Window id="mainWindow">
+		<TableView dataCollection="cars" dataTransform="transform" dataFilter="filter">
+			<TableViewRow title="{title}" modelId="{id}" />
+		</TableView>
+	</Window>
+</Alloy>
